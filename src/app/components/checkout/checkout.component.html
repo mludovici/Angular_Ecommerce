@@ -14,7 +14,7 @@
 										<div *ngIf="firstName.errors.required">
 											First Name is required
 										</div>
-										<div *ngIf="firstName.errors.minlength ||lastName.errors.notOnlyWhitespace">
+										<div *ngIf="firstName.errors.minLength ||lastName.errors.notOnlyWhitespace">
 											First Name must be at least 2 characters long
 										</div>
 									</div>
@@ -31,7 +31,7 @@
 										<div *ngIf="lastName.errors.required">
 											Last Name is required
 										</div>
-										<div *ngIf="lastName.errors.minlength ||lastName.errors.notOnlyWhitespace">
+										<div *ngIf="lastName.errors.minLength ||lastName.errors.notOnlyWhitespace">
 											Last Name must be at least 2 characters long
 										</div>
 									</div>
@@ -84,7 +84,7 @@
 										<div *ngIf="shippingAddressStreet.errors.required ||shippingAddressStreet.errors.notOnlyWhitespace">
 											Street is required
 										</div>
-										<div *ngIf="shippingAddressStreet.errors.minlength">
+										<div *ngIf="shippingAddressStreet.errors.minLength">
 											At least 2 characters are required
 										</div>
 									</div>
@@ -101,7 +101,7 @@
 										<div *ngIf="shippingAddressCity.errors.required ||shippingAddressCity.errors.notOnlyWhitespace">
 											City is required
 										</div>
-										<div *ngIf="shippingAddressStreet.errors.minlength">
+										<div *ngIf="shippingAddressCity.errors.minLength">
 											At least 2 characters are required
 										</div>
 									</div>
@@ -134,7 +134,7 @@
 									<div *ngIf="shippingAddressZipCode.errors.required ||shippingAddressZipCode.errors.notOnlyWhitespace">
 										Zip code is required
 									</div>
-									<div *ngIf="shippingAddressZipCode.errors.minlength">
+									<div *ngIf="shippingAddressZipCode.errors.minLength">
 										Zip code needs at least 2 characters
 									</div>
 								</div>
@@ -179,7 +179,7 @@
 										<div *ngIf="billingAddressStreet.errors.required ||billingAddressStreet.errors.notOnlyWhitespace">
 											Street is required
 										</div>
-										<div *ngIf="billingAddressStreet.errors.minlength">
+										<div *ngIf="billingAddressStreet.errors.minLength">
 											At least 2 characters are required
 										</div>
 									</div>
@@ -196,7 +196,7 @@
 										<div *ngIf="billingAddressCity.errors.required ||billingAddressCity.errors.notOnlyWhitespace">
 											City is required
 										</div>
-										<div *ngIf="billingAddressCity.errors.minlength">
+										<div *ngIf="billingAddressCity.errors.minLength">
 											At least 2 characters are required
 										</div>
 									</div>
@@ -228,7 +228,7 @@
 										<div *ngIf="billingAddressZipCode.errors.required ||billingAddressZipCode.errors.notOnlyWhitespace">
 											Zip code is required
 										</div>
-										<div *ngIf="billingAddressZipCode.errors.minlength">
+										<div *ngIf="billingAddressZipCode.errors.minLength">
 											Zip code needs at least 2 characters
 										</div>
 									</div>
@@ -266,7 +266,7 @@
 										<div *ngIf="creditCardNameOnCard.errors.required">
 											Credit card name is required
 										</div>	
-										<div *ngIf="creditCardNameOnCard.errors.minlength || creditCardNameOnCard.errors.notOnlyWhitespace">
+										<div *ngIf="creditCardNameOnCard.errors.minLength || creditCardNameOnCard.errors.notOnlyWhitespace">
 											Credit card name needs at least 2 characters
 										</div>									
 									</div>
